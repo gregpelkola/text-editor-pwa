@@ -35,7 +35,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js', // Path to your service worker file
-        swDest: "src-sw.js" // Exclude specific files from being precached
+        swDest: 'src-sw.js' // Exclude specific files from being precached
       }),
     ],
     module: {
