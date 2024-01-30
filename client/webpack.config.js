@@ -19,6 +19,10 @@ module.exports = () => {
         template: './index.html',
         title: 'Just Another Text Editor',
       }),
+      new InjectManifest({
+        swSrc: './src-sw.js', // Path to your service worker file
+        swDest: 'src-sw.js' // Exclude specific files from being precached
+      }),
       new WebpackPwaManifest({
         fingerprints: false, inject: true,
         name: 'Just Another Text Editor',
@@ -26,6 +30,8 @@ module.exports = () => {
         description: 'A Text Editor PWA that works online and offline',
         background_color: '#ffffff',
         theme_color: '#000000',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -33,16 +39,17 @@ module.exports = () => {
           },
         ],
       }),
-      new InjectManifest({
-        swSrc: './src-sw.js', // Path to your service worker file
-        swDest: 'src-sw.js' // Exclude specific files from being precached
-      }),
+      
     ],
     module: {
       rules: [
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
         },
         {
           test: /\.m?js$/,
