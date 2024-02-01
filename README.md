@@ -40,6 +40,8 @@ Download the repository, and open in VSCode or other IDE. Open terminal, and run
 
 https://text-editor-pwa-vfdt.onrender.com/
 
+https://github.com/gregpelkola/text-editor-pwa
+
 Provide instructions and examples for use. Include screenshots as needed.
 
 Open terminal, and run npm install. Once all packages are installed run npm run start. Open browser and naviagte to http://localhost:3000 , to view the live application. User can then type in the text editor, when finished you can leave the page and return and your text will be saved.
