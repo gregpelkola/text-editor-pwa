@@ -5,9 +5,20 @@
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
 - What was your motivation?
+
+To create a PWA text editor, that can work online and offline.
+
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+
+To be able to access a PWA text editor online or offline.
+
 - What problem does it solve?
+
+Saving work, if you lose access to a network, and the ability to work while not connected to a network.
+
 - What did you learn?
+
+PWAs, deploying to render, debugging using dev tools in the browser.
 
 ## Table of Contents (Optional)
 
@@ -21,12 +32,22 @@ If your README is long, add a table of contents to make it easy for users to fin
 ## Installation
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Download the repository, and open in VSCode or other IDE. Open terminal, and run npm install. Once all packages are installed run npm run start.
+
+
 
 ## Usage
 
+https://text-editor-pwa-vfdt.onrender.com/
+
 Provide instructions and examples for use. Include screenshots as needed.
 
+Open terminal, and run npm install. Once all packages are installed run npm run start. Open browser and naviagte to http://localhost:3000 , to view the live application. User can then type in the text editor, when finished you can leave the page and return and your text will be saved.
+
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+
+
+![alt text](client/src/images/jate.png)
 
     ```md
     ![alt text](assets/images/screenshot.png)
